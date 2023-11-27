@@ -58,7 +58,13 @@ function handleComplete(evt,comp) {
 }
 </script>
 <script type="text/javascript">
+	var gdpr = "{GDPR}"; // Replace with the GDPR value from the ad serving platform
+	var gdprConsent = "{GDPR_CONSENT_50}"; // Replace with the specific GDPR consent value from the platform
+
 	var clickTag = "https://www.calzedonia.com/fr/femme/collants_et_bas/astrologie/?utm_medium=banner&utm_source=amnet&utm_campaign=[FR_ADV]_calzedonia_astrologie&utm_content=PACK-IAB-";
+
+	// Modify clickTag to include DSP redirect parameters
+	clickTag += "&gdpr=" + gdpr + "&gdpr_consent=" + gdprConsent;
 </script>      
 
 <!-- write your code here -->
